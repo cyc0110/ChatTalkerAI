@@ -1,0 +1,91 @@
+// platform
+.platformList
+  width: calc( 33.3333% - 1rem )
+  p
+    opacity: 0.6
+.social
+  +size(90px)
+
+//service
+.service-area
+  h2
+    padding-bottom: 1rem
+  ul.f-wrap
+    align-items: stretch
+.castList
+  width: calc( 25% - 1rem )
+  border-radius: 12px
+  box-shadow: 0 2px 10px rgba(black,0.1)
+  overflow: hidden
+.card-body
+  padding: 1rem 1rem 1.5rem
+  .cardTitle
+    font-size: 1rem
+    color: $primary
+    margin-bottom: 1rem 
+
+// feature
+.feature-area
+  text-align: left
+  +flex
+.featureBlock
+  +flex(flex-start) 
+  flex-wrap: wrap
+  flex: 1
+  gap: 2rem
+.featureList
+  width: calc( 50% - 2rem )
+  padding: 2rem
+  border-radius: 12px
+  box-shadow: 0 2px 10px rgba(black,0.1)
+  .iconCir
+    +flex
+    +size(86px)
+    border-radius: 43px
+    padding: 1rem
+    box-shadow: 0 2px 10px rgba(black,0.1)
+  h5
+    padding: 1.5rem 0 1rem
+.featureTxt
+  +flex
+  flex: 1
+  p
+    padding: 1rem 0
+
+// comment
+.commentList
+  width: calc( 33.3333% - 1rem )
+  border-radius: 12px
+  box-shadow: 0 2px 10px rgba(black,0.1)
+  padding: 1.5rem 2rem
+  text-align: left
+  position: relative
+  .commentTxt
+    padding-bottom: 1.5rem
+    margin: 1.5rem 0
+    border-bottom: solid 1px $gray-500
+.avator
+  +size(80px)
+  border-radius: 40px
+  position: absolute
+  left: 2rem
+  top: -3rem
+  background-size: cover
+.user1
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user01.jpg)
+.user2
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user02.jpg)
+.user3
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user03.jpg)
+.coName
+  font-weight: 700
+  padding-bottom: 0.5rem
+.stars
+  +flex
+.starItem
+  padding: 0 0.25rem
+.icon-tabler-star
+  +size(16px)
+  fill: $colorYellow
+  stroke: $colorYellow
+  cursor: default

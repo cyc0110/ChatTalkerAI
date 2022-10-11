@@ -1,0 +1,76 @@
+// web
+@media screen and (max-width: 992px)
+  .versionBlock
+    flex-wrap: wrap
+  .versionList
+    width: 100%
+
+// ipad
+@media screen and (max-width: 768px)
+  .container
+    padding: 0 2rem
+  .f-wrap
+    gap: 2rem
+
+  // header
+  .home-header
+    background: none
+  .kv
+    flex-direction: column
+  .kvImg
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg) no-repeat center bottom/contain
+    +size(334px)
+
+  // platform
+  .platform-area>.platformBlock
+    flex-direction: column
+  .platformList,.commentList
+    width: 100%
+
+  // service
+  .castBlock
+    flex-wrap: wrap
+  .castList
+    width: calc( 50% - 1rem )
+
+  // feature
+  .feature-area
+    flex-direction: column-reverse
+  .featureBlock
+    justify-content: center
+  .featureTxt
+    text-align: center
+    margin-bottom: 2rem
+
+  // comment
+  .comment-area
+    overflow: hidden
+  .comments
+    flex-wrap: wrap
+
+  // filter
+  .filterBlock
+    justify-content: flex-start
+  .version-body
+    padding: 1.5rem 1rem
+  .calcBlock
+    gap: 0.5rem
+  .calcList
+    padding: 1rem 0.5rem
+  .infoBlock
+    font-size: 0.875rem
+  .infoList
+    align-items: flex-start
+
+  // footer
+  .footerCover
+    height: 461px
+    background-size: cover
+
+@media screen and (max-width: 576px)
+  .castList,.featureList
+    width: 100%
+// mobile
+@media screen and (max-width: 375px)
+  .logo
+    max-height: 24px

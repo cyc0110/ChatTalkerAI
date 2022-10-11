@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap')
+
+// Required
+@import "../node_modules/bootstrap/scss/functions"
+
+$primary: #56C4C5
+$secondary: #FF5D50
+$colorYellow: #F5CA52
+// Required
+@import "../node_modules/bootstrap/scss/variables"
+@import "../node_modules/bootstrap/scss/maps"
+@import "../node_modules/bootstrap/scss/mixins"
+@import "../node_modules/bootstrap/scss/root"
+
+// Optional Bootstrap components here
+@import "../node_modules/bootstrap/scss/reboot"
+@import "../node_modules/bootstrap/scss/type"
+@import "../node_modules/bootstrap/scss/bootstrap-grid"
+@import "../node_modules/bootstrap/scss/buttons"
+@import "../node_modules/bootstrap/scss/accordion"
+
+@import "variables"
+@import "base"
+
+
+.container
+  max-width: 1120px
+  margin: 0 auto
+  padding: 0 1rem
+
+.f-wrap
+  +flex(space-between)
+  // flex-wrap: wrap
+  // gap: 1rem
+.my-6
+  margin: 6.25rem 0
+
+@import "header"
+@import "index"
+@import "program"
+@import "footer"
+    
+#btn-top
+  +size(72px)
+  border-radius: 36px
+  position: fixed
+  right: 3rem
+  bottom: 3rem
+  border: none
+  background-color: $primary
+  color: white
+  font-weight: 700
+  cursor: pointer
+
+
+@import "rwd"
